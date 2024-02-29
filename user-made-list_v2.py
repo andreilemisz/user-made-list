@@ -10,6 +10,8 @@ item_to_delete = ""     # Item number to be deleted
 
 # Function to present the list of already made itens, used twice in the code
 def list():
+    if not master_list:
+        print("No item to show.")
     # Showing the index starting from number 1, rather than 0
     for contagem, item in enumerate(master_list):
         print("Índex:", contagem + 1, "Item:", item)
